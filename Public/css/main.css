@@ -129,5 +129,28 @@ footer {
     justify-content: space-around;
 }
 .formUpdateNote{
-    display: none;
+    display: none; 
+}
+.buttonUpdate{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+
+}
+.buttonDelete{
+    background-color: red;
+    color: white;
+    font-weight: bold; 
+}
+.notesViews{
+    border: 2px solid blue;
+    width: 400px;
+    min-height: 400px;
+}
+.formNoteViews{
+    border: 2px solid black;
+    padding: 5px;
+}
+.fullBlockNoteView{
+    margin-bottom: 5%;
 }

@@ -14,7 +14,7 @@
                 <li id="linksView"><a><span onclick="linkView()"><i class="fas fa-bars"></i></span></li></a>
                 <div id="link">
                     <a href="html.php"><li>HTML</li></a>
-                    <a href=""><li>CSS</li></a>
+                    <a href="css.php"><li>CSS</li></a>
                     <a href=""><li>JavaScript</li></a>
                     <a href=""><li>PHP</li></a> 
                     <a href=""><li>SQL</li></a>
@@ -56,6 +56,7 @@
                             <a href=""><li class="liDropdown">Linux</li></a>
                         </div>
                     </div>
+                    <a href="html.php"><li>CDN</li></a>
                     <a href="addNoteForm.php"><li id="formAdd">Ajouter une note</li></a>
                 </div>
             </ul>

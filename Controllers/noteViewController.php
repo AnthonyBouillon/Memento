@@ -26,6 +26,11 @@ if (isset($_POST['submitDeleteNote'])) {
 if(isset($_POST['submitUpdateNote'])){
     $memento->id = $_POST['id'];
     $memento->description = $_POST['description'];
-    $memento->updateData();
-    $readData = $memento->readData();
+    if($memento->updateData() === true){
+        $readData = $memento->readData();
+        $success['updateNote'] = 'La note a était modifié avec succès';
+    }else{
+        $error['notUpdateNote'] = 'La note n\'a pas pu être modifié';
+    }
+    
 }

@@ -48,6 +48,7 @@ require_once 'header.php';
             <li>PENCIL</li>
             <li>WINDOWS</li>
             <li>LINUX</li>
+            <li>CDN</li>
         </ol> 
     </div>
 </div>

@@ -3,7 +3,7 @@
 $memento = new memento();
 $error = array();
 $success = array();
-$validSection = array('HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'SQL', 'BOOTSTRAP', 'MATERIALIZE', 'JQUERY', 'REACT', 'NODEJS', 'WORKBENCH', 'PHPMYADMIN', 'LINUX', 'WINDOWS', 'PENCIL', 'NETBEANS');
+$validSection = array('HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'SQL', 'BOOTSTRAP', 'MATERIALIZE', 'JQUERY', 'REACT', 'NODEJS', 'WORKBENCH', 'PHPMYADMIN', 'LINUX', 'WINDOWS', 'PENCIL', 'NETBEANS', 'CDN');
 if (isset($_POST['submitAddNote'])) {
     if (!empty($_POST['section']) && !empty($_POST['description'])) {
         $memento->section = $_POST['section'];
