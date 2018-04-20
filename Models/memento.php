@@ -16,6 +16,7 @@ class memento extends dataBase {
     public $id = 0;
     public $section = '';
     public $description = '';
+    public $search = '';
 
     function __construct() {
         parent::__construct();
@@ -35,10 +36,12 @@ class memento extends dataBase {
     }
 
     public function readData() {
-        $query = 'SELECT `id`, `section`,`description` FROM `data` ORDER BY id ASC';
+        $query = 'SELECT `id`, `section`,`description` FROM `data` WHERE `description` LIKE :search ORDER BY id ASC';
         $request = $this->db->prepare($query);
+        $request->bindValue(':search', '%' . $this->search . '%', PDO::PARAM_STR);
         $request->execute();
         return $request->fetchAll(PDO::FETCH_OBJ);
+        
     }
 
     public function updateData() {

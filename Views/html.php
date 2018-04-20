@@ -11,6 +11,7 @@ require_once 'header.php';
     <input type="search" name="search" id="search"/>
     <input type="submit" name="submitSearch" value="Valider" id="submitSearch" />
 </form>
+<p><?= empty($readData = $memento->readData()) ? 'L\'élément recherché n\'existe pas' : ''; ?></p>
 <p class="text-center"><?= !empty($error['notIdInAttribut']) ? $error['notIdInAttribut'] : ''; ?></p>
 <p class="text-center"><?= !empty($error['notDelete']) ? $error['notDelete'] : ''; ?></p>
 <p class="text-center"><?= !empty($error['notId']) ? $error['notId'] : ''; ?></p>
