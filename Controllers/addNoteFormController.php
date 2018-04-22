@@ -1,9 +1,18 @@
 <?php
-
+// On instancie notre objet "memento" dans une variable afin de pouvoir l'utiliser
 $memento = new memento();
+/*
+ * On assigne un tableau vide dans une variable
+ * qui nous servira à créer nos messages d'erreur et de succès
+ */
 $error = array();
 $success = array();
+// On assigne un tableau contenant des rubriques, ce qui nous permet de contrôler ce que nous autorisons comme nom de rubriques
 $validSection = array('HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'SQL', 'BOOTSTRAP', 'MATERIALIZE', 'JQUERY', 'REACT', 'NODEJS', 'WORKBENCH', 'PHPMYADMIN', 'LINUX', 'WINDOWS', 'PENCIL', 'NETBEANS', 'CDN');
+/*
+ * Si l'utilisateur soumet le formulaire "d'ajout de note"
+ * 
+ */
 if (isset($_POST['submitAddNote'])) {
     if (!empty($_POST['section']) && !empty($_POST['description'])) {
         $memento->section = $_POST['section'];

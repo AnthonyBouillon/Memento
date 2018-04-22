@@ -1,16 +1,26 @@
 <?php
+/*
+ * Model contenant la connexion à la base de données
+ * Model contenant les requêtes SQL
+ * Controller des vues contenant les notes
+ */
 require_once '../Models/dataBase.php';
 require_once '../Models/memento.php';
 require_once '../Controllers/noteViewController.php';
+// Titre assigné à la balise <title>
 $title = 'HTML';
+// Menu
 require_once 'header.php';
 ?>
+<!-- Titre de la page -->
 <h2 class="text-center">HTML</h2><hr/>
+<!-- Barre de recherche -->
 <form method="POST">
     <label for="search">Rechercher : </label>
     <input type="search" name="search" id="search"/>
     <input type="submit" name="submitSearch" value="Valider" id="submitSearch" />
 </form>
+<!-- Message d'erreur et de succès -->
 <p><?= empty($readData = $memento->readData()) ? 'L\'élément recherché n\'existe pas' : ''; ?></p>
 <p class="text-center"><?= !empty($error['notIdInAttribut']) ? $error['notIdInAttribut'] : ''; ?></p>
 <p class="text-center"><?= !empty($error['notDelete']) ? $error['notDelete'] : ''; ?></p>
@@ -18,15 +28,19 @@ require_once 'header.php';
 <p class="text-center"><?= !empty($success['delete']) ? $success['delete'] : ''; ?></p>
 <p class="text-center"><?= !empty($success['updateNote']) ? $success['updateNote'] : ''; ?></p>
 <p class="text-center"><?= !empty($success['notUpdateNote']) ? $success['notUpdateNote'] : ''; ?></p>
+<!-- Bloc contenant les notes -->
 <div class="readNote">
     <?php
     foreach ($readData as $html) {
         if ($html->section === 'HTML') {
             ?>
             <div class="fullBlockNoteView">
+                <!-- Block contenant la description de la note,
+                    L'attribut "id" contient le nom + l'id pour les distinguers -->
                 <div class="notesViews" id="notesViews<?= $html->id ?>">
                     <?= $html->description; ?>
                 </div>
+                <!-- Block qui contient le formulaire ayant : deux boutons modifier + supprimer + sous-block contenant le textarea -->   
                 <div class="formNoteViews">
                     <form method="POST">
                         <input type="hidden" name="id" value="<?= $html->id ?>" />
@@ -47,4 +61,5 @@ require_once 'header.php';
     ?>
 </div>
 <?php
+// Footer
 require_once 'footer.php';

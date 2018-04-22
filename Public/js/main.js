@@ -10,6 +10,11 @@ function buttonUpdateNote() {
 //        elements[i].style.display = "none";   
 //    }
 }
+/*
+ * Quand je clique sur le bouton modifier, une démarre une fonction : 
+ * On ajoute la valeur de l'id sur la classe buttonUpdate
+ * 
+ */
 $('.buttonUpdate').click(function () {
     var id = $(this).attr('id');
     document.getElementById('formUpdateNote' + id).style.display = 'block';

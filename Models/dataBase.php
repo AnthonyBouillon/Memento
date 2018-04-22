@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Connexion à la base de données
+ * Classe "dataBase" qui sert à se connecter à la base de données
  *
  * @author Bonnie
  */
