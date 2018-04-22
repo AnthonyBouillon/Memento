@@ -5,7 +5,7 @@
         <title><?= $title ?></title>
         <link href="../Public/css/main.css" rel="stylesheet" />
     </head>
-    <body>
+    <body class="body">
         <header>
             <h1>Memento du développeur web</h1>
         </header>

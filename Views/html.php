@@ -13,7 +13,7 @@ $title = 'HTML';
 require_once 'header.php';
 ?>
 <!-- Titre de la page -->
-<h2 class="text-center">HTML</h2><hr/>
+<h2 class="text-center titleStyle">HTML</h2>
 <!-- Barre de recherche -->
 <form method="POST">
     <label for="search">Rechercher : </label>
@@ -37,23 +37,23 @@ require_once 'header.php';
             <div class="fullBlockNoteView">
                 <!-- Block contenant la description de la note,
                     L'attribut "id" contient le nom + l'id pour les distinguers -->
-                <div class="notesViews" id="notesViews<?= $html->id ?>">
-                    <?= $html->description; ?>
+                <div id="notesViews<?= $html->id ?>" class="test">
+                    <ul class="box3">
+                        <li class="corner"><?= $html->description; ?></li>
+                    </ul> 
                 </div>
                 <!-- Block qui contient le formulaire ayant : deux boutons modifier + supprimer + sous-block contenant le textarea -->   
-                <div class="formNoteViews">
-                    <form method="POST">
-                        <input type="hidden" name="id" value="<?= $html->id ?>" />
-                        <div id="twoButtonViews<?= $html->id ?>">
-                        <input type="button" onclick="buttonUpdateNote()" class="buttonUpdate" id="<?= $html->id; ?>" value="MODIFIER" />
+                <form method="POST">
+                    <input type="hidden" name="id" value="<?= $html->id ?>" />
+                    <div id="twoButtonViews<?= $html->id ?>">
+                        <input type="button" onclick="buttonUpdateNote()" class="buttonUpdate bold" id="<?= $html->id; ?>" value="MODIFIER" />
                         <input type="submit" name="submitDeleteNote" class="buttonDelete" value="SUPPRIMER" onclick="return confirm('Etes-vous sûr de vouloir le supprimer ?')" />
-                        </div>
-                        <div id="formUpdateNote<?= $html->id ?>" class="formUpdateNote">
-                            <textarea name="description" rows="15" id="description"><?= $html->description; ?></textarea>
-                            <input type="submit" name="submitUpdateNote" value="VALIDER" />
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div id="formUpdateNote<?= $html->id ?>" class="formUpdateNote">
+                        <textarea name="description" rows="15" id="description"><?= $html->description; ?></textarea>
+                        <input type="submit" name="submitUpdateNote" value="VALIDER" />
+                    </div>
+                </form>      
             </div>
             <?php
         }

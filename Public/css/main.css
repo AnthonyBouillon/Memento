@@ -46,7 +46,7 @@ ul a li {
 }
 
 ul a li:hover {
-    background-color: purple;
+    background-color: orange;
 }
 
 a {
@@ -67,7 +67,7 @@ a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: orange;
+    background-color: grey;
     padding: 12px;
     z-index: 1;
     border: 1px solid black;
@@ -143,12 +143,6 @@ footer {
     display: none;
 }
 
-.buttonUpdate {
-    background-color: green;
-    color: white;
-    font-weight: bold;
-}
-
 .buttonDelete {
     background-color: red;
     color: white;
@@ -161,11 +155,6 @@ footer {
     min-height: 400px;
 }
 
-.formNoteViews {
-    border: 10px groove grey;
-    padding: 5px;
-}
-
 .fullBlockNoteView {
     margin-bottom: 5%;
 }
@@ -176,6 +165,11 @@ footer {
 
 #submitSearch {
     max-width: 100px;
+}
+
+.test {
+    overflow: scroll;
+    height: 450px;
 }
 
 
@@ -203,4 +197,72 @@ footer {
     h1 {
         font-size: 20px;
     }
+}
+
+
+/* test */
+
+ul.box3 {
+    position: relative;
+    /* prevent shadows falling behind containers with backgrounds */
+    overflow: hidden;
+    list-style: none;
+}
+
+ul.box3 li {
+    float: left;
+    min-width: 400px;
+    min-height: 400px;
+    background: #FFFFA5;
+}
+
+.corner:before {
+    content: "";
+    position: absolute;
+    border-bottom: 30px solid #FFFFA5;
+    border-left: 30px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* bouton */
+
+.buttonUpdate {
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(30, 22, 54, 0.7);
+    box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 20px 30px;
+}
+
+.buttonUpdate:hover {
+    box-shadow: rgba(30, 155, 54, 0.7) 0 0px 0px 40px inset;
+}
+
+.buttonDelete {
+    color: rgba(255, 255, 245, 0.85);
+    float: right;
+    background-color: rgba(30, 22, 54, 0.7);
+    box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 20px 30px;
+}
+
+.buttonDelete:hover {
+    box-shadow: rgba(187, 18, 18, 0.7) 0 0px 0px 40px inset;
+}
+
+
+/* Titre principale */
+
+.titleStyle {
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 4%;
+    color: black;
+    background: beige;
+    box-shadow: 0px 10px 15px 5px #000;
+    margin-top: -10px;
 }
