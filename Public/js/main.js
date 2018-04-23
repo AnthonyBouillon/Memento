@@ -21,3 +21,5 @@ $('.buttonUpdate').click(function () {
     $('#notesViews' + id).css('display', 'none');
     $('#twoButtonViews' + id).css('display', 'none');
 });
+// Faire disparaitre le label de la barre de recherche
+document.getElementById('labelSearchBar').style.display = 'none';

@@ -8,12 +8,12 @@ require_once '../Models/dataBase.php';
 require_once '../Models/memento.php';
 require_once '../Controllers/noteViewController.php';
 // Titre assigné à la balise <title>
-$title = 'REACT';
+$title = 'GIT';
 // Menu
 require_once 'header.php';
 ?>
 <!-- Titre de la page -->
-<h2 class="text-center titleStyle">REACT</h2>
+<h2 class="text-center titleStyle">GIT</h2>
 <!-- Barre de recherche -->
 <form method="POST">
     <label for="search" id="labelSearchBar">Rechercher : </label>
@@ -37,7 +37,7 @@ require_once 'header.php';
 <div class="readNote">
     <?php
     foreach ($readData as $data) {
-        if ($data->section === 'REACT') {
+        if ($data->section === 'GIT') {
             ?>
             <div class="fullBlockNoteView">
                 <!-- Block contenant la description de la note,
@@ -69,3 +69,4 @@ require_once 'header.php';
 <?php
 // Footer
 require_once 'footer.php';
+

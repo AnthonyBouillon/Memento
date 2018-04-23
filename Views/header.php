@@ -54,6 +54,8 @@
                         <div class="dropdown-content">
                             <a href="windows.php"><li class="liDropdown">Windows</li></a>
                             <a href="linux.php"><li class="liDropdown">Linux</li></a>
+                            <a href="git.php"><li class="liDropdown">Git</li></a>
+                            <a href="dia.php"><li class="liDropdown">Dia</li></a>
                         </div>
                     </div>
                     <a href="cdn.php"><li>CDN</li></a>

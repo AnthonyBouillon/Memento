@@ -1,9 +1,30 @@
 /* ---------------------------------------------------------------------Corps */
-
-body {
-    margin: 0;
-    padding: 0;
+/* Footer en bas de page */
+html, body {
+    height: 100%;
+    margin: 0; padding: 0;
 }
+body {
+    font-family: Courier New;
+    /* Footer en bas de page */
+    display : table;
+    width: 100%;
+    /* background-color: #6c455b;*/
+}
+/* --------------------------------------------------------------------Footer */
+
+footer {
+    background-color: grey;
+    padding: 5px;
+    text-align: center;
+    border-top: 2px solid black;
+    /* Footer en bas de page */
+    width: 100%;
+    display: table-row;
+    height: 50px;
+}
+
+
 
 
 /* -------------------------------------------------------------------En-tête */
@@ -13,7 +34,8 @@ h1 {
     margin-bottom: 0px;
     padding: 10px;
     border-bottom: 3px solid black;
-    background-color: orange;
+    background-color: black;
+    color: orange;
 }
 
 
@@ -45,12 +67,12 @@ ul a li {
     font-weight: bold;
 }
 
-ul a li:hover {
-    background-color: orange;
-}
 
 a {
     text-decoration: none;
+}
+nav li:hover{
+    color: orange;
 }
 
 
@@ -82,17 +104,6 @@ a {
 }
 
 
-/* --------------------------------------------------------------------Footer */
-
-footer {
-    background-color: grey;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    border-top: 2px solid black;
-}
 
 
 /* --------------------------------------------------------------------Classe */
@@ -143,11 +154,8 @@ footer {
     display: none;
 }
 
-.buttonDelete {
-    background-color: red;
-    color: white;
-    font-weight: bold;
-}
+
+
 
 .notesViews {
     border: 10px groove darkred;
@@ -156,7 +164,7 @@ footer {
 }
 
 .fullBlockNoteView {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 #search {
@@ -167,7 +175,7 @@ footer {
     max-width: 100px;
 }
 
-.test {
+.blocDescription {
     overflow: scroll;
     height: 450px;
 }
@@ -180,7 +188,6 @@ footer {
         max-width: 280px;
     }
 }
-
 
 /* Fait apparaitre le lien menu et fait disparaitre les liens du menu */
 
@@ -198,22 +205,28 @@ footer {
         font-size: 20px;
     }
 }
+@media screen and (max-width: 480px) {
+    .fullBlockNoteView {
+        width: 280px;  
+    }
+}
 
 
 /* test */
 
-ul.box3 {
+ul.box {
     position: relative;
     /* prevent shadows falling behind containers with backgrounds */
     overflow: hidden;
     list-style: none;
+
 }
 
-ul.box3 li {
+ul.box li {
     float: left;
     min-width: 400px;
     min-height: 400px;
-    background: #FFFFA5;
+    background-color: #E2BC74;
 }
 
 .corner:before {
@@ -254,15 +267,46 @@ ul.box3 li {
     box-shadow: rgba(187, 18, 18, 0.7) 0 0px 0px 40px inset;
 }
 
-
+.button{
+    color: rgba(255, 255, 245, 0.85);
+    background-color: rgba(30, 22, 54, 0.7);
+    box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 20px 30px;  
+}
+.searchBar{
+    background-color: white;
+    box-shadow: none;
+    color: black;
+    border: 2px solid black;
+    padding: 20px 30px;  
+    border-radius: 4px;
+}
+.button:hover {
+    box-shadow: rgba(0, 255, 255, 0.5) 0 0px 0px 40px inset;
+    color: black;
+}
 /* Titre principale */
 
 .titleStyle {
     font-size: 30px;
     padding: 20px;
-    margin-bottom: 4%;
-    color: black;
-    background: beige;
-    box-shadow: 0px 10px 15px 5px #000;
+    margin-bottom: 2%;
+    color: orange;
+    background-color: #303030;
     margin-top: -10px;
+}
+.alert-danger{
+    background-color: pink;
+    color: red;
+    width: 400px;
+}
+.alert-success{
+    background-color: greenyellow;
+    color: green;
+    width: 400px;
+}
+#blocLinkFooter ul a li:hover{
+    color: orange;
 }

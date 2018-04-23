@@ -49,6 +49,8 @@ require_once 'header.php';
             <li>WINDOWS</li>
             <li>LINUX</li>
             <li>CDN</li>
+            <li>GIT</li>
+            <li>DIA</li>
         </ol> 
     </div>
 </div>
