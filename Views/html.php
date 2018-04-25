@@ -55,11 +55,11 @@ require_once 'header.php';
                         <input type="submit" name="submitDeleteNote" class="buttonDelete bold" value="SUPPRIMER" onclick="return confirm('Etes-vous sûr de vouloir le supprimer ?')" />
                     </div>
                     <div id="formUpdateNote<?= $data->id ?>" class="formUpdateNote">
-                        <textarea name="description" rows="15" id="description"><?= $data->description; ?></textarea>
-                        <input type="submit" name="submitUpdateNote" value="VALIDER" />
-                        <input type="submit"  value="ANNULER" />
+                        <textarea name="description" rows="15" id="description"><?= htmlspecialchars($data->description); ?></textarea>
+                        <input type="submit" name="submitUpdateNote" value="VALIDER" class="buttonUpdate" />
+                        <input type="submit"  value="ANNULER" class="button" />
                     </div>
-                </form>      
+                </form>  
             </div>
             <?php
         }

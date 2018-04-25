@@ -17,7 +17,7 @@ class dataBase {
      */
     protected function __construct() {
         try {
-            $this->db = new PDO('mysql:host=127.0.0.1;dbname=Memento;charset=utf8','root','');
+            $this->db = new PDO('mysql:host=localhost;dbname=Memento;charset=utf8','root','');
         } catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
         }

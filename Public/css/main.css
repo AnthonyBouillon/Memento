@@ -1,16 +1,24 @@
 /* ---------------------------------------------------------------------Corps */
+
+
 /* Footer en bas de page */
-html, body {
+
+html,
+body {
     height: 100%;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
     font-family: Courier New;
     /* Footer en bas de page */
-    display : table;
+    display: table;
     width: 100%;
     /* background-color: #6c455b;*/
 }
+
+
 /* --------------------------------------------------------------------Footer */
 
 footer {
@@ -23,8 +31,6 @@ footer {
     display: table-row;
     height: 50px;
 }
-
-
 
 
 /* -------------------------------------------------------------------En-tête */
@@ -67,11 +73,11 @@ ul a li {
     font-weight: bold;
 }
 
-
 a {
     text-decoration: none;
 }
-nav li:hover{
+
+nav li:hover {
     color: orange;
 }
 
@@ -93,6 +99,7 @@ nav li:hover{
     padding: 12px;
     z-index: 1;
     border: 1px solid black;
+    width: 190px;
 }
 
 .dropdown {
@@ -102,8 +109,6 @@ nav li:hover{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
 
 
 /* --------------------------------------------------------------------Classe */
@@ -150,13 +155,6 @@ nav li:hover{
     justify-content: space-around;
 }
 
-.formUpdateNote {
-    display: none;
-}
-
-
-
-
 .notesViews {
     border: 10px groove darkred;
     min-width: 400px;
@@ -183,11 +181,6 @@ nav li:hover{
 
 /* -------------------------------------------------------------MEDIA QUERIES */
 
-@media screen and (max-width: 600px) {
-    .notesViews {
-        max-width: 280px;
-    }
-}
 
 /* Fait apparaitre le lien menu et fait disparaitre les liens du menu */
 
@@ -205,11 +198,6 @@ nav li:hover{
         font-size: 20px;
     }
 }
-@media screen and (max-width: 480px) {
-    .fullBlockNoteView {
-        width: 280px;  
-    }
-}
 
 
 /* test */
@@ -219,7 +207,6 @@ ul.box {
     /* prevent shadows falling behind containers with backgrounds */
     overflow: hidden;
     list-style: none;
-
 }
 
 ul.box li {
@@ -227,6 +214,7 @@ ul.box li {
     min-width: 400px;
     min-height: 400px;
     background-color: #E2BC74;
+    padding: 5px;
 }
 
 .corner:before {
@@ -267,26 +255,30 @@ ul.box li {
     box-shadow: rgba(187, 18, 18, 0.7) 0 0px 0px 40px inset;
 }
 
-.button{
+.button {
     color: rgba(255, 255, 245, 0.85);
     background-color: rgba(30, 22, 54, 0.7);
     box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
     text-decoration: none;
     border-radius: 4px;
-    padding: 20px 30px;  
+    padding: 20px 30px;
 }
-.searchBar{
+
+.searchBar {
     background-color: white;
     box-shadow: none;
     color: black;
     border: 2px solid black;
-    padding: 20px 30px;  
+    padding: 20px 30px;
     border-radius: 4px;
 }
+
 .button:hover {
     box-shadow: rgba(0, 255, 255, 0.5) 0 0px 0px 40px inset;
     color: black;
 }
+
+
 /* Titre principale */
 
 .titleStyle {
@@ -297,16 +289,30 @@ ul.box li {
     background-color: #303030;
     margin-top: -10px;
 }
-.alert-danger{
+
+.alert-danger {
     background-color: pink;
     color: red;
     width: 400px;
 }
-.alert-success{
+
+.alert-success {
     background-color: greenyellow;
     color: green;
     width: 400px;
 }
-#blocLinkFooter ul a li:hover{
+
+#blocLinkFooter ul a li:hover {
     color: orange;
+}
+
+#listSection {
+    background: #303030;
+    color: orange;
+    border-radius: 15px;
+}
+
+.formUpdateNote {
+    width: 100%;
+    display: none;
 }

@@ -2,69 +2,69 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <title><?= $title ?></title>
+        <title>Accueil</title>
         <link href="Public/css/main.css" rel="stylesheet" />
     </head>
     <body>
         <header>
             <h1>Memento du développeur web</h1>
         </header>
-        <nav>
+              <nav>
             <ul>
                 <li id="linksView"><a><span onclick="linkView()"><i class="fas fa-bars"></i></span></li></a>
                 <div id="link">
-                    <a href="Views/html.php"><li>HTML</li></a>
-                    <a href="Views/css.php"><li>CSS</li></a>
-                    <a href="Views/javascript.php"><li>JavaScript</li></a>
-                    <a href="Views/php.php"><li>PHP</li></a> 
-                    <a href="Views/sql.php"><li>SQL</li></a>
-                    <a href="Views/serveur.php"><li>Serveur</li></a>
+                    <a href="Html"><li>HTML</li></a>
+                    <a href="Css"><li>CSS</li></a>
+                    <a href="Javascript"><li>JavaScript</li></a>
+                    <a href="PHP"><li>PHP</li></a> 
+                    <a href="SQL"><li>SQL</li></a>
+                    <a href="Serveur"><li>Serveur</li></a>
                     <div class="dropdown">
-                        <a href=""><li>Framework / Librairie <i class="fas fa-arrow-down"></i></li></a>
+                        <a href=""><li>Framework/Librairie <i class="fas fa-arrow-down"></i></li></a>
                         <div class="dropdown-content">
-                            <a href="Views/bootstrap.php"><li class="liDropdown">Bootstrap</li></a>
-                            <a href="Views/materialize.php"><li class="liDropdown">Materialize</li></a>
-                            <a href="Views/jquery.php"><li class="liDropdown">jQuery</li></a>
-                            <a href="Views/react.php"><li class="liDropdown">React</li></a>
-                            <a href="Views/nodejs.php"><li class="liDropdown">NodeJS</li></a>
+                            <a href="Bootstrap"><li class="liDropdown">Bootstrap</li></a>
+                            <a href="Materialize"><li class="liDropdown">Materialize</li></a>
+                            <a href="jQuery"><li class="liDropdown">jQuery</li></a>
+                            <a href="React"><li class="liDropdown">React</li></a>
+                            <a href="NodeJS"><li class="liDropdown">NodeJS</li></a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a href=""><li>Base de données <i class="fas fa-arrow-down"></i></li></a>
                         <div class="dropdown-content">
-                            <a href="Views/mysql.php"><li class="liDropdown">MySQL</li></a>
-                            <a href="Views/workbench.php"><li class="liDropdown">Workbench</li></a>
-                            <a href="Views/phpmyadmin.php"><li class="liDropdown">phpMyAdmin</li></a>
+                            <a href="MySQL"><li class="liDropdown">MySQL</li></a>
+                            <a href="Workbench"><li class="liDropdown">Workbench</li></a>
+                            <a href="phpMyAdmin"><li class="liDropdown">phpMyAdmin</li></a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a href=""><li>IDE <i class="fas fa-arrow-down"></i></li></a>
                         <div class="dropdown-content">
-                            <a href="Views/netbeans.php"><li class="liDropdown">Netbeans</li></a>
+                            <a href="Netbeans"><li class="liDropdown">Netbeans</li></a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a href=""><li>Logiciel <i class="fas fa-arrow-down"></i></li></a>
                         <div class="dropdown-content">
-                            <a href="Views/pencil.php"><li class="liDropdown">Pencil</li></a>
+                            <a href="Pencil"><li class="liDropdown">Pencil</li></a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a href=""><li>Divers <i class="fas fa-arrow-down"></i></li></a>
                         <div class="dropdown-content">
-                            <a href="Views/windows.php"><li class="liDropdown">Windows</li></a>
-                            <a href="Views/linux.php"><li class="liDropdown">Linux</li></a>
-                            <a href="Views/git.php"><li class="liDropdown">Git</li></a>
-                            <a href="Views/dia.php"><li class="liDropdown">Dia</li></a>
+                            <a href="Windows"><li class="liDropdown">Windows</li></a>
+                            <a href="Linux"><li class="liDropdown">Linux</li></a>
+                            <a href="Git"><li class="liDropdown">Git</li></a>
+                            <a href="Dia"><li class="liDropdown">Dia</li></a>
                         </div>
                     </div>
-                    <a href="Views/cdn.php"><li>CDN</li></a>
-                    <a href="Views/addNoteForm.php"><li id="formAdd">Ajouter une note</li></a>
+                    <a href="CDN"><li>CDN</li></a>
+                    <a href="Ajouter-une-note"><li id="formAdd">Ajouter une note</li></a>
                 </div>
             </ul>
         </nav>
         <section>
-            <h2 class="text-center">Bienvenue sur mon "Memento"</h2><hr/>
+            <h2 class="text-center titleStyle">Bienvenue sur mon "Memento"</h2>
             <p class="text-center">Ce projet est en ALPHA</p>
         </section>
         <footer>
@@ -77,4 +77,4 @@
         <script>tinymce.init({selector: 'textarea'});</script>
     </body>
 </html>
-
+ 

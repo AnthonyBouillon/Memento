@@ -2,3 +2,28 @@
 #AuthType Basic
 #AuthUserFile ".htpasswd"
 #Require valid-user
+Options +FollowSymlinks
+RewriteEngine on
+RewriteOptions Inherit
+RewriteRule Html Views/html.php [L]
+RewriteRule Css Views/css.php [L]
+RewriteRule Bootstrap Views/bootstrap.php [L]
+RewriteRule Javascript Views/javascript.php [L]
+RewriteRule CDN Views/cdn.php [L]
+RewriteRule Dia Views/dia.php [L]
+RewriteRule Git Views/git.php [L]
+RewriteRule jQuery Views/jquery.php [L]
+RewriteRule Linux Views/linux.php [L]
+RewriteRule Windows Views/windows.php [L]
+RewriteRule Materialize Views/materialize.php [L]
+RewriteRule MySQL Views/mysql.php [L]
+RewriteRule Netbeans Views/netbeans.php [L]
+RewriteRule NodeJS Views/nodejs.php [L]
+RewriteRule Pencil Views/pencil.php [L]
+RewriteRule PHP Views/php.php [L]
+RewriteRule phpMyAdmin Views/phpmyadmin.php [L]
+RewriteRule React Views/react.php [L]
+RewriteRule Serveur Views/serveur.php [L]
+RewriteRule SQL Views/sql.php [L]
+RewriteRule Workbench Views/workbench.php [L]
+RewriteRule Ajouter-une-note Views/addNoteForm.php [L] 

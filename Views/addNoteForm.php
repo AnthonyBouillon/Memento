@@ -5,7 +5,7 @@ require_once '../Controllers/addNoteFormController.php';
 $title = 'Ajouter une note';
 require_once 'header.php';
 ?>
-<h2 class="text-center">Ajouter une note : </h2><hr/>
+<h2 class="text-center titleStyle">Ajouter une note : </h2>
 <div id="container">
     <div class="element">
         <div>
@@ -24,11 +24,11 @@ require_once 'header.php';
                 <textarea name="description" rows="15" id="description"></textarea>
             </div>
             <div>
-                <input type="submit" name="submitAddNote" id="submitAddNote" />
+                <input type="submit" name="submitAddNote" id="submitAddNote" class="button" />
             </div>
         </form>
     </div>
-    <div class="element">
+    <div class="element" id="listSection">
         <h2>Liste des rubriques : </h2>
         <p>La rubrique du formulaire doit contenir un mot de cette liste</p>
         <ol>
